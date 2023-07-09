@@ -1,6 +1,7 @@
 require('tearamisuyu.config')
-require('tearamisuyu.pack')
+require('tearamisuyu.packer')
 require('tearamisuyu.keyboard')
+require('tearamisuyu.harpoon')
 require('tearamisuyu.telescope')
 require('tearamisuyu.lsp')
 require('tearamisuyu.lualine')
