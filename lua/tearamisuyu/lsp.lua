@@ -7,7 +7,8 @@ lsp.ensure_installed({
   'eslint',
   'rust_analyzer',
   'volar',
-  'lua_ls'
+  'lua_ls',
+  'pyright'
 })
 
 lsp.on_attach(function(_, bufnr)
