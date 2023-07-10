@@ -9,7 +9,7 @@ local ensure_packer = function()
   return false
 end
 
-packer_bootstrap = ensure_packer()
+local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
 
 
   -- Code
+  use 'nvim-tree/nvim-tree.lua'
   use 'rstacruz/vim-closer'
   use 'tpope/vim-fugitive'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSEnable highlight' }

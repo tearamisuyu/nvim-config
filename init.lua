@@ -1,2 +1,2 @@
-require('tearamisuyu')
+require('core')
 
