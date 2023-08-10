@@ -6,4 +6,5 @@ require('core.lualine')
 require('core.treesitter')
 require('core.config')
 require('core.nvimtree')
+require('core.tabstop')
 
