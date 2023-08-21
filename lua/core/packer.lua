@@ -16,14 +16,15 @@ return require('packer').startup(function(use)
 
 
   -- Theme
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use { 'rose-pine/neovim', as = 'rose-pine' }
+  use 'Mofiqul/dracula.nvim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
 
-  vim.cmd('colorscheme rose-pine')
+  vim.cmd.colorscheme 'dracula'
 
 
   -- Code
@@ -32,8 +33,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSEnable highlight' }
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.2',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} }
   }
 
   use {
