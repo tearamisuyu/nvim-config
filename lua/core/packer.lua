@@ -17,14 +17,15 @@ return require('packer').startup(function(use)
 
   -- Theme
   use { 'rose-pine/neovim', as = 'rose-pine' }
+  use { 'nyoom-engineering/oxocarbon.nvim' }
   use 'Mofiqul/dracula.nvim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-
-  vim.cmd.colorscheme 'dracula'
+  vim.opt.background = 'dark'
+  vim.cmd.colorscheme 'oxocarbon'
 
 
   -- Code

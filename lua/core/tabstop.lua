@@ -18,3 +18,8 @@ vim.api.nvim_exec([[
   autocmd FileType rust setlocal tabstop=4 shiftwidth=4 expandtab
 ]], false)
 
+-- Haskell
+vim.api.nvim_exec([[
+  autocmd FileType haskell setlocal tabstop=4 shiftwidth=4 expandtab
+]], false)
+
